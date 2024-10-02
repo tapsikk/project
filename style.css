@@ -1,0 +1,169 @@
+.title {
+  color: #000;
+  text-decoration: none;
+}
+
+.title:hover,
+.title:active {
+  color: #993af3;
+}
+.header {
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.navLink {
+  color: black;
+  text-decoration: none;
+}
+.navLink:hover,
+.navLink:active {
+  color: #993af3;
+}
+
+.benefitsSection {
+  padding: 5px 20px;
+  margin-top: 30px;
+}
+
+.benefitsList {
+  margin-top: 10px;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.benefitsItem {
+  width: 30%;
+  border: 1px solid #993af3;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.reviewsSection {
+  margin-top: 30px;
+  padding: 5px 20px;
+}
+
+.reviewContent {
+    margin-top: 10px;
+  width: 30%;
+  border: 1px solid #993af3;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.reviewBtnContainer {
+  margin: 10px auto 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-top: 1px solid #000000;
+    position: fixed;
+    bottom: 0;
+    flex-wrap: wrap;
+  }
+
+.footerList {
+}
+
+/* media */
+
+@media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .navList {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+      padding: 0;
+    }
+  
+    .benefitsList {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .benefitsItem {
+      width: 100%;
+    }
+  
+    .reviewContent {
+        margin-top: 10px;
+      width: 100%;
+    }
+  
+    .reviewBtnContainer {
+        display: flex;
+        align-items: center;
+      gap: 10px;
+    }
+    .reviewPreviousBtn, .reviewNextBtn {
+        width: fit-content;
+    }
+  
+    .reviewsSection {
+        margin-bottom: 50px; 
+      }
+    
+      .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        position: relative;
+        bottom: 0;
+        flex-wrap: wrap;
+      }
+    
+      .footerList {
+        width: 100%;
+        padding: 10px 0;
+      }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 10px;
+    }
+  
+    .navList {
+      gap: 10px;
+    }
+  
+    .benefitsItem {
+      padding: 5px;
+    }
+  
+    .footer {
+      padding: 10px;
+      position: relative;
+        bottom: 0;
+        flex-wrap: wrap;
+    }
+  }
+  
